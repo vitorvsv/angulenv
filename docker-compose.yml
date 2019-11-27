@@ -1,0 +1,10 @@
+version: "3"
+services:
+    angulenv_node:
+        build: .
+        restart: always
+        volumes:
+            - ../:/app:Z
+        tty: true
+        ports:
+          - "4200:4200"
